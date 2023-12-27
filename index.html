@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Alarm_clock_UI.css">
+  <title>Alarm Clock</title>
+</head>
+
+<body>
+  <div id="clock-body">
+
+    <div id="current-time-boddy">
+      <h2 id="current-time" class="font-color">12:13:00</h2>
+    </div>
+
+    <div id="set-alarm-body">
+      <div class="form-actions">
+        <div class="alarm-inputs">
+          <input type="number" name="hour" placeholder="Enter hours" min="0" max="12" required />
+          <input type="number" name="min" min="0" max="60" placeholder="Enter minutes" required />
+          <select name="zone" required>
+            <option value="" selected disabled>Zone</option>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+        <div class="week-list">
+          <div get-data="0">S</div>
+          <div get-data="1">M</div>
+          <div get-data="2">T</div>
+          <div get-data="3">W</div>
+          <div get-data="4">T</div>
+          <div get-data="5">F</div>
+          <div get-data="6">S</div>
+        </div>
+        <button id="button">Submit</button>
+
+      </div>
+    </div>
+   <div class="scroll-smooth" id="addAlarmBody">
+    <ul id="alarm-list">
+
+    </ul>
+  
+
+
+   </div>
+  </div>
+
+  <script src="Alarm_clock_Fun.js">
+
+  </script>
+</body>
+
+</html>
